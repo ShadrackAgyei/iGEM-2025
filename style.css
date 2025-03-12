@@ -1,75 +1,92 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
+    overflow: auto;
 }
 
-header {
-    background-color: #0056b3;
-    color: white;
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #666;
+    text-align: center;
+}
+
+.background-image {
+    background-image: url('images/IMG_3254.JPG');
+    height: 80vh; /* 80% viewport height */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Our Story Section */
+.our-story {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.our-story h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.story-container {
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-}
-
-.team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.team-member {
-    background: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
+    background: rgb(21, 88, 144);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
+.story-container p {
+    color: hsl(0, 0%, 100%) ;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+
+/* Egg-Shaped Containers Section */
+.egg-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Increased space between eggs */
+    padding: 50px 50px; /* Increased left & right padding */
+    margin: 50px 0; /* Adds space above and below */
+    background-color: #ffffff; /* Light background */
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+/* More Elongated Egg Shape */
+.egg-container {
+    width: 12%;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 50% / 80%;
+    display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 3px solid transparent; /* Hide border initially */
 }
 
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 50%;
-    text-align: left;
+/* Ensure Images Fit Properly */
+.egg-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the shape without distortion */
 }
 
-.close {
-    float: right;
-    font-size: 24px;
-    cursor: pointer;
+/* Show Border on Hover */
+.egg-container:hover {
+    transform: scale(1.05);
+    border: 3px solid #ffcc00; /* Add border on hover */
 }
