@@ -42,6 +42,41 @@
     </section>
     <!-- Egg-Shaped Containers Section Ends -->
     
+
+    <!-- Open Book Section -->
+    <section class="book-section">
+        <div class="book">
+            <!-- Book Cover (Default View) -->
+            <div class="book-cover" id="bookCover">
+                <h2>Meet the Team</h2>
+                <p>Click an egg to reveal details!</p>
+            </div>
+
+            <!-- Open Book (One Member Per Page) -->
+            <div class="book-inner hidden" id="bookInner">
+                <!-- Close Button -->
+                <button class="close-btn" onclick="closeBook()">✖</button>
+
+                <!-- Left Page -->
+                <div class="book-left">
+                    <img id="memberImage1" src="images/default.jpg" alt="Team Member 1">
+                    <h3 id="memberName1">Name 1</h3>
+                    <p id="eggName1">Egg Name 1</p>
+                </div>
+
+                <!-- Center Line to Make it Look Like a Book -->
+                <div class="book-divider"></div>
+
+                <!-- Right Page -->
+                <div class="book-right">
+                    <img id="memberImage2" src="images/default.jpg" alt="Team Member 2">
+                    <h3 id="memberName2">Name 2</h3>
+                    <p id="eggName2">Egg Name 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Open Book Section Ends -->
     
     <script src="script.js"></script>
 </body>
