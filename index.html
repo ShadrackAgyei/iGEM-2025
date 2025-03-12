@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGEM Team - Ashesi Ghana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ashesi Ghana iGEM Team</h1>
+        <p>Meet the brilliant minds behind our 2024 project!</p>
+    </header>
+
+    <section class="team">
+        <div class="team-member">
+            <img src="member1.jpg" alt="Team Member 1">
+            <h2>John Doe</h2>
+            <p>Team Leader</p>
+            <button onclick="showDetails('John Doe', 'Team Leader', 'John is passionate about synthetic biology...')">More Info</button>
+        </div>
+
+        <div class="team-member">
+            <img src="member2.jpg" alt="Team Member 2">
+            <h2>Jane Smith</h2>
+            <p>Researcher</p>
+            <button onclick="showDetails('Jane Smith', 'Researcher', 'Jane focuses on bioinformatics and lab work...')">More Info</button>
+        </div>
+
+        <!-- Add more team members here -->
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-role"></p>
+            <p id="modal-bio"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
